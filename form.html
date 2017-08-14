@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bootstrap Form Validation</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+
+</head>
+<body>
+<br/>
+    <div class="container">
+        <div class="panel panel-primary" style="width: 750px; margin: 0px auto">
+            <div class="panel-heading">Bootstrap Form Validation</div>
+            <div class="panel-body">
+                <form data-toggle="validator" role="form">
+                    <div class="form-group">
+                        <label class="control-label" for="inputName">Name</label>
+                        <input class="form-control" data-error="Please enter name field." id="inputName" placeholder="Name" type="text" required/>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="inputEmail">Email</label>
+                        <input class="form-control" id="inputEmail" placeholder="example@email.com" type="email" required/>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="inputPassword">Password</label>
+                        <div class="form-group">
+                            <input class="form-control" type="password" data-minlength="5" id="inputPassword" data-error="Must enter minimum of 5 characters" placeholder="Password" required/>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
